@@ -673,3 +673,179 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
+
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 767px) {
+
+  .container,
+  .container-caja {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.4rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* GAMES */
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .game-card {
+    padding: 1.5rem;
+  }
+
+  .game-card h3 {
+    font-size: 1.4rem;
+  }
+
+  /* GAME PAGE */
+  .game-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .game-header h2 {
+    font-size: 1.8rem;
+  }
+
+  /* PACKS */
+  .packs-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pack-btn {
+    padding: 1.2rem;
+  }
+
+  /* GAME INTERFACE */
+  .game-interface {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .dice-input {
+    flex-direction: column;
+  }
+
+  .dice-input input {
+    width: 100%;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* CALCULATOR */
+  .calculator-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-btn {
+    padding: 1rem;
+  }
+
+  .product-name {
+    font-size: 0.95rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  /* CART */
+  .cart {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .item-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cart-total {
+    font-size: 1rem;
+  }
+
+  /* HISTORY */
+  .history-section {
+    padding: 1rem;
+  }
+
+  /* BUTTONS */
+  .confirm-btn,
+  .back-btn,
+  .clear-cart {
+    width: 100%;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .game-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-btn {
+    padding: 1rem;
+  }
+
+  .cart h3 {
+    font-size: 1.2rem;
+  }
+
+  .qty-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .qty-input {
+    width: 40px;
+  }
+}
